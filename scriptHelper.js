@@ -46,21 +46,21 @@ function formSubmission(document, list, pilot, copilot, fuelLevel, cargoLevel) {
         if (Number(fuelLevel) < 10000) {
             list[2].innerHTML = "Fuel level too low for launch";
             faultyItems.style.visibility = "visible";
-            launchStatus.innerHTML = "Awaiting Information Before Launch";
+            launchStatus.innerHTML = "Shuttle not ready for launch";
             launchStatus.style.color = "#C7254E";
         } else if (Number(cargoLevel) > 10000) {
             list[3].innerHTML = "Cargo mass too high for launch";
             faultyItems.style.visibility = "visible";
-            launchStatus.innerHTML = "Awaiting Information Before Launch";
+            launchStatus.innerHTML = "Shuttle not ready for launch";
             launchStatus.style.color = "#C7254E";
         } else {
             faultyItems.style.visibility = "hidden";
-            launchStatus.innerHTML = "Awaiting Information Before Launch";
+            launchStatus.innerHTML = "Shuttle not ready for launch";
             launchStatus.style.color = "#419F6A";
         }
     } else {
         faultyItems.style.visibility = "visible";
-        launchStatus.innerHTML = "Awaiting Information Before Launch";
+        launchStatus.innerHTML = "Shuttle not ready for launch";
         launchStatus.style.color = "#C7254E";
     }
 }
