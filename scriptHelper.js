@@ -19,10 +19,13 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
 
 function validateInput(testInput) {
     if (testInput === "") {
+        alert("Please provide a value.");
         return "Empty";
     } else if (isNaN(Number(testInput))) {
+        alert("Please provide a valid number.");
         return "Not a Number";
     } else {
+        //alert("Please provide valid letters.");
         return "Is a Number";
     }
    
