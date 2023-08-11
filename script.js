@@ -9,12 +9,12 @@ window.addEventListener("load", function() {
        listedPlanets = result;
        console.log(listedPlanets);
        // Pick a random planet from the list and add its information to the destination
-       const planet = pickPlanet(listedPlanets);
-       addDestinationInfo(document, planet.name, planet.diameter, planet.star, planet.distance, planet.moons, planet.image);
+       
    }).then(function () {
        console.log(listedPlanets);
        // Below this comment call the appropriate helper functions to pick a planet fom the list of planets and add that information to your destination.
-
+       const planet = pickPlanet(listedPlanets);
+       addDestinationInfo(document, planet.name, planet.diameter, planet.star, planet.distance, planet.moons, planet.image);
    })
 
    // formSubmission function to handle form submission
